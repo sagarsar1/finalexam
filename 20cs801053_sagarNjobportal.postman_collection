@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "19385d38-caa8-4165-bd28-87d3a1880a3b",
+		"name": "jobportal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getall- Get all JobPortalDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9191/normal/webapi/all",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"normal",
+						"webapi",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-JobPortalEntry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"experience\": [\r\n    \"Experienced\"\r\n  ],\r\n  \"jobDescription\": \"Automatic Tester\",\r\n  \"jobId\": 7,\r\n  \"jobTitle\": \"Automatic Tester\",\r\n  \"project\": [\r\n    {\r\n      \"projectName\": \"sagar\",\r\n      \"technology\": [\r\n        \"Dev ops\"\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/normal/webapi/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"normal",
+						"webapi",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
